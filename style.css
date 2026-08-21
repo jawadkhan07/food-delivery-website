@@ -1,0 +1,57 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav bar desiging  */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/*Navbar ka logo*/
+#logo{
+    margin: 10px 35px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+
+}
+/* Navbar list position */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+   color: white;
+}
+
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+
+#navbar{
+    position: relative;
+}
